@@ -23,7 +23,7 @@ export default function OverlappingGallery({
     // <section className="w-full overflow-hidden bg-white py-10 sm:py-14 lg:py-20">
       <div className="w-full">
         {/* gallery area */}
-        <div className="relative mx-auto flex min-h-[240px] w-full items-center justify-center sm:min-h-[320px] md:min-h-[380px] lg:min-h-[500px] xl:min-h-[560px]">
+        <div className="relative mx-auto flex min-h-60 w-full items-center justify-center sm:min-h-80 md:min-h-95 lg:min-h-125 xl:min-h-140">
           {items.map((item, index) => {
             const offset = index - centerIndex;
             const isCenter = offset === 0;
