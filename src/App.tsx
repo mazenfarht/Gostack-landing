@@ -4,6 +4,11 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
+import ClientsLogos from "./sections/ClientsLogos";
+import Hero from "./sections/HeroSection";
+import Navbar from "./sections/Navbar";
+import Partners from "./sections/Partners";
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -121,11 +126,15 @@
 
 // export default App
 
-
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold text-blue-600 bg-blue-200 p-4 rounded">Hello Tailwind</h1>
+    <div className="min-h-screen bg-[#eaf7fc] font-cairo">
+      <Navbar />
+      <Hero />
+      <ClientsLogos />
+      <Partners />
     </div>
-  )
+  );
 }
+
+export default App;
