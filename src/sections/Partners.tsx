@@ -1,55 +1,87 @@
 import School01Icon from "@iconify-react/hugeicons/school-01";
 import Building03Icon from "@iconify-react/hugeicons/building-03";
 import OfficeIcon from "@iconify-react/hugeicons/office";
-export default function Features() {
+import ChampionIcon from "@iconify-react/hugeicons/champion";
+import PoliceStationIcon from "@iconify-react/hugeicons/police-station";
+
+const cards = [
+  {
+    title: "المدارس",
+    desc: "نعمل مع مجموعة واسعة من الشركاء والجهات التعليمية والمهنية لتقديم تجارب تعلم حديثة تُسهم في بناء القدرات وتنمية المواهب وإعداد الأجيال القادمة.",
+    Icon: School01Icon,
+  },
+  {
+    title: "المؤسسات",
+    desc: "تأثير قابل للتوسع من خلال التعلم القائم على التكنولوجيا",
+    Icon: Building03Icon,
+  },
+  {
+    title: "الشركات",
+    desc: "برامج تطوير المواهب والابتكار",
+    Icon: OfficeIcon,
+  },
+  {
+    title: "الأندية",
+    desc: "تفاعل الشباب من خلال البرمجة وريادة الأعمال",
+    Icon: ChampionIcon,
+  },
+  {
+    title: "الحوكمة",
+    desc: "دعم التحول الرقمي ومبادرات مهارات المستقبل",
+    Icon: PoliceStationIcon,
+  },
+];
+
+// Reusable Card Component
+function PartnerCard({ title, desc, Icon }) {
   return (
-    <div className="mt-16 p-6 flex justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full max-w-6xl">
-        {/* Card 1 */}
-        <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
-          <School01Icon height="24" />
-          <h3 className="font-bold text-[#393838] mt-3">تعليم حديث</h3>
-          <p className="text-sm text-gray-500 mt-2">
-            نستخدم أحدث أساليب التعليم التفاعلي
-          </p>
+    <div className="relative bg-[#50BDE9] shadow-sm p-5 rounded-2xl overflow-hidden">
+      {/* top-left cut circle */}
+      <div className="absolute -top-6 -left-6 w-20 h-20 bg-[#BBE6F6] rounded-full"></div>
+
+      <div className="flex items-center justify-center gap-3">
+        <h3 className="font-bold text-white leading-none">{title}</h3>
+
+        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+          <Icon height="30" />
+        </div>
+      </div>
+
+      <p className="text-sm text-white mt-2 text-center p-2">{desc}</p>
+    </div>
+  );
+}
+export default function Partners() {
+  return (
+    <div className="relative mx-auto max-w-7xl px-6 pt-10 pb-20">
+      <div>
+        {/* Top badge */}
+        <div className="flex justify-center mb-6">
+          <span className="text-sm text-gray-600 px-4  ">✦ من نعمل معهم</span>
         </div>
 
-        {/* Card 2 */}
-        <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
-          <Building03Icon height="24" />
-          <h3 className="font-bold text-[#393838] mt-3">ابتكار</h3>
-          <p className="text-sm text-gray-500 mt-2">
-            نركز على تنمية التفكير الإبداعي
-          </p>
-        </div>
+        {/* Title */}
+        <h1 className="text-center text-3xl md:text-5xl font-bold leading-snug text-gray-800 max-w-3xl mx-auto">
+          نُحدث أثرًا في التعليم والتقنية عبر مختلف القطاعات
+        </h1>
 
-        {/* Card 3 */}
-        <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
-          <OfficeIcon height="24" />
-          <h3 className="font-bold text-[#393838] mt-3">ذكاء اصطناعي</h3>
-          <p className="text-sm text-gray-500 mt-2">
-            تعليم تقنيات المستقبل والذكاء الاصطناعي
-          </p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
-          <School01Icon height="24" />
-
-          <h3 className="font-bold text-[#393838] mt-3">شراكات</h3>
-          <p className="text-sm text-gray-500 mt-2">
-            نتعاون مع جهات تعليمية ومهنية
-          </p>
-        </div>
-
-        {/* Card 5 */}
-        <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
-          <School01Icon height="24" />
-
-          <h3 className="font-bold text-[#393838] mt-3">تطوير مستمر</h3>
-          <p className="text-sm text-gray-500 mt-2">
-            نطور مهارات الطلاب بشكل مستمر
-          </p>
+        {/* Subtitle */}
+        <p className="mt-5 text-center text-[#A4A3A3] max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          نعمل مع مجموعة واسعة من الشركاء والجهات التعليمية والمهنية لتقديم
+          تجارب تعلم حديثة تُسهم في بناء القدرات، وتنمية المواهب، وإعداد الأجيال
+          القادمة لمتطلبات المستقبل الرقمي.
+        </p>
+      </div>
+      <div className="mt-16 p-6 flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full max-w-6xl">
+          {cards.map((card, index) => (
+            <PartnerCard
+              key={index}
+              title={card.title}
+              desc={card.desc}
+              Icon={card.Icon}
+            />
+          ))}
         </div>
       </div>
     </div>
