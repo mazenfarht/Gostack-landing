@@ -1,5 +1,9 @@
+import Section2 from "./section2";
+
 export default function LandingPage() {
   return (
-    <div>Landing Page</div>
+    <div>
+      <Section2 />
+    </div>
   )
 }

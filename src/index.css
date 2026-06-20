@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --color-primary: #50BDE9;
+  --color-background: #E9F7FC;
+  --color-secbg: #BBE6F6;
+  --color-text-grey: #A4A3A3;
+}
+
 body {
-  background-color: #eaf7fc;
+  background-color: var(--color-background);
   font-family: "Cairo", sans-serif;
 }
