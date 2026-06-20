@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-react/hugeicons": "^1.0.8",
+    "@iconify/react": "^6.0.2",
     "@rolldown/binding-win32-x64-msvc": "^1.1.2",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
