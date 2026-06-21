@@ -12,9 +12,6 @@ export default function LandingPage() {
       <Navbar />
       <HeroSection />
       <ClientsLogos />
-      <Navbar />
-      <HeroSection />
-      <ClientsLogos />
       <Section2 />
       <Partners />
       <Partners />
