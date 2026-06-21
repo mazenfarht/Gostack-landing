@@ -3,7 +3,7 @@ import Building03Icon from "@iconify-react/hugeicons/building-03";
 import OfficeIcon from "@iconify-react/hugeicons/office";
 import ChampionIcon from "@iconify-react/hugeicons/champion";
 import PoliceStationIcon from "@iconify-react/hugeicons/police-station";
-import SectionHeader from "./SectionHeader/SectionHeader";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const cards = [
   {
@@ -36,19 +36,21 @@ const cards = [
 // Reusable Card Component
 function PartnerCard({ title, desc, Icon }) {
   return (
-    <div className="relative bg-[#50BDE9] shadow-sm p-5 rounded-2xl overflow-hidden">
-      {/* top-left cut circle */}
-      <div className="absolute -top-6 -left-6 w-20 h-20 bg-[#BBE6F6] rounded-full"></div>
+    <div className="relative bg-[#50BDE9] p-5 rounded-2xl overflow-hidden ">
+      {/* half circle */}
+      <div className="absolute -top-10 -left-10 w-29 h-29 bg-[#BBE6F6] rounded-full"></div>
 
-      <div className="flex items-center justify-center gap-3">
-        <h3 className="font-bold text-white leading-none">{title}</h3>
+      <div className="flex items-center justify-center gap-3 relative z-10 ">
+        <h3 className="font-bold text-white">{title}</h3>
 
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
           <Icon height="30" />
         </div>
       </div>
 
-      <p className="text-sm text-white mt-2 text-center p-2">{desc}</p>
+      <p className="text-sm text-white mt-2 text-center relative z-10">
+        {desc}
+      </p>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import SectionHeader from "./SectionHeader/SectionHeader";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function WhyUs() {
   const leftCards = [

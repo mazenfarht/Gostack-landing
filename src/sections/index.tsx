@@ -1,23 +1,23 @@
-import ClientsLogos from "./section5/ClientsLogos";
+import ClientsLogos from "./ClientsLogos/ClientsLogos";
 import Footer from "./footer/Footer";
-import HeroSection from "./section1/HeroSection";
-import Navbar from "./navbar/Navbar";
-import Partners from "./Partners";
+import HeroSection from "./HeroSection/HeroSection";
+import Navbar from "./Navbar/Navbar";
 import Section2 from "./section2";
 import Section3 from "./section3";
-import MainOffice from "./section6/WorldMap";
-import ContactSection from "./section7/ContactSection";
-import WhyUs from "./WhyUs";
+import MainOffice from "./WorldMap/WorldMap";
+import ContactSection from "./ContactSection/ContactSection";
+import Partners from "./Partners/Partners";
+import WhyUs from "./WhyUs/WhyUs";
 
 export default function LandingPage() {
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <ClientsLogos />
       <Section2 />
-      <Partners />
+      <ClientsLogos />
       <Section3 />
+      <Partners />
       <WhyUs />
       <MainOffice />
       <ContactSection />

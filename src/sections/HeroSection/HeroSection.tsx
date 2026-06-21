@@ -39,7 +39,7 @@ export default function HeroSection() {
 
         {/* CTA */}
         <div className="mt-8 flex justify-center items-center ">
-          <button className="bg-[#50BDE9] text-white px-6 py-3 rounded-full font-semibold shadow-md transition">
+          <button className="bg-[#50BDE9] text-black px-6 py-3 rounded-full font-semibold shadow-md transition">
             ابدأ الآن
           </button>
 
@@ -51,10 +51,10 @@ export default function HeroSection() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[76px]">
+        <div className="mt-16  flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[76px] ">
             {/* Card 1 */}
-            <div className="w-[264px] h-[203px] bg-[#BBE6F6] text-center shadow-sm rounded-tl-[24px] rounded-tr-[28px] rounded-br-[24px] rounded-bl-[44px] flex flex-col justify-center items-center">
+            <div className="p-10 border-2 border-[#50BDE9]  bg-[#BBE6F6] text-center shadow-sm rounded-tl-[24px] rounded-tr-[28px] rounded-br-[24px] rounded-bl-[44px] flex flex-col justify-center items-center">
               <h3 className="text-2xl font-bold text-white">+4,000</h3>
               <p className="text-[#393838] text-sm mt-2">
                 طالب وطالبة شاركوا في برامجنا التدريبية في البرمجة والذكاء
@@ -63,7 +63,7 @@ export default function HeroSection() {
             </div>
 
             {/* Card 2 */}
-            <div className="w-[264px] h-[203px] bg-[#BBE6F6] text-center shadow-sm rounded-tl-[24px] rounded-tr-[28px] rounded-br-[24px] rounded-bl-[44px] flex flex-col justify-center items-center">
+            <div className=" bg-[#BBE6F6] border-2 border-[#50BDE9]  text-center shadow-sm rounded-tl-[24px] rounded-tr-[28px] rounded-br-[24px] rounded-bl-[44px] flex flex-col justify-center items-center">
               <h3 className="text-2xl font-bold text-white">95%</h3>
               <p className="text-[#393838] text-sm mt-2">
                 معدل رضا أولياء الأمور والطلاب
@@ -71,7 +71,7 @@ export default function HeroSection() {
             </div>
 
             {/* Card 3 */}
-            <div className="w-[264px] h-[203px] bg-[#BBE6F6] text-center shadow-sm rounded-tl-[24px] rounded-tr-[28px] rounded-br-[24px] rounded-bl-[44px] flex flex-col justify-center items-center">
+            <div className=" bg-[#BBE6F6] border-2 border-[#50BDE9]  text-center shadow-sm rounded-tl-[24px] rounded-tr-[28px] rounded-br-[24px] rounded-bl-[44px] flex flex-col justify-center items-center">
               <h3 className="text-2xl font-bold text-white">+200</h3>
               <p className="text-[#393838] text-sm mt-2">
                 مشروع إبداعي تم تطويره بواسطة طلابنا
