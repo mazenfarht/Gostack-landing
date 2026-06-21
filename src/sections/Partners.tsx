@@ -3,6 +3,7 @@ import Building03Icon from "@iconify-react/hugeicons/building-03";
 import OfficeIcon from "@iconify-react/hugeicons/office";
 import ChampionIcon from "@iconify-react/hugeicons/champion";
 import PoliceStationIcon from "@iconify-react/hugeicons/police-station";
+import SectionHeader from "./SectionHeader/SectionHeader";
 
 const cards = [
   {
@@ -54,24 +55,11 @@ function PartnerCard({ title, desc, Icon }) {
 export default function Partners() {
   return (
     <div className="relative mx-auto max-w-7xl px-6 pt-10 pb-20">
-      <div>
-        {/* Top badge */}
-        <div className="flex justify-center mb-6">
-          <span className="text-sm text-gray-600 px-4  ">✦ من نعمل معهم</span>
-        </div>
-
-        {/* Title */}
-        <h1 className="text-center text-3xl md:text-5xl font-bold leading-snug text-gray-800 max-w-3xl mx-auto">
-          نُحدث أثرًا في التعليم والتقنية عبر مختلف القطاعات
-        </h1>
-
-        {/* Subtitle */}
-        <p className="mt-5 text-center text-[#A4A3A3] max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-          نعمل مع مجموعة واسعة من الشركاء والجهات التعليمية والمهنية لتقديم
-          تجارب تعلم حديثة تُسهم في بناء القدرات، وتنمية المواهب، وإعداد الأجيال
-          القادمة لمتطلبات المستقبل الرقمي.
-        </p>
-      </div>
+      <SectionHeader
+        badge="من نعمل معهم"
+        title="نُحدث أثرًا في التعليم والتقنية عبر مختلف القطاعات"
+        description="نعمل مع مجموعة واسعة من الشركاء والجهات التعليمية والمهنية لتقديم تجارب تعلم حديثة تُسهم في بناء القدرات، وتنمية المواهب، وإعداد الأجيال القادمة لمتطلبات المستقبل الرقمي."
+      />
       <div className="mt-16 p-6 flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full max-w-6xl">
           {cards.map((card, index) => (
