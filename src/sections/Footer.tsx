@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center">
             <img
-              src="/0.png"
+              src="/f3a285ff183fe89529ca806f7ba973b5f0ef5ad7 (1).png"
               alt="logo"
               className="
               object-contain
@@ -36,8 +36,6 @@ export default function Footer() {
               lg:w-[164px] lg:h-[58px]
               "
             />
-
-            <h3 className="text-lg font-bold text-white">تري سي كودينج سكول</h3>
           </div>
 
           <p className="text-gray-400 text-sm leading-relaxed">
