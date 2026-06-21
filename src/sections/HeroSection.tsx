@@ -1,3 +1,5 @@
+import ArrowSolidIcon from "@iconify-react/teenyicons/arrow-solid";
+
 export default function HeroSection() {
   return (
     <section
@@ -42,7 +44,9 @@ export default function HeroSection() {
           </button>
 
           <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow">
-            <span className="rotate-[45deg] text-sm lg:text-base">←</span>
+            <span>
+              <ArrowSolidIcon height="19" color="black" />
+            </span>
           </div>
         </div>
 

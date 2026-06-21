@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@iconify-react/hugeicons": "^1.0.8",
+    "@iconify-react/teenyicons": "^1.0.2",
     "@iconify/react": "^6.0.2",
     "@rolldown/binding-win32-x64-msvc": "^1.1.2",
     "react": "^19.2.6",

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ArrowSolidIcon from "@iconify-react/teenyicons/arrow-solid";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -96,8 +97,10 @@ export default function Navbar() {
         {/* CTA (Desktop) */}
         <div className="hidden md:flex items-center flex-row-reverse">
           {/* arrow */}
-          <div className="flex h-9 w-9 lg:h-10 lg:w-10 items-center justify-center rounded-full bg-sky-500 text-white">
-            <span className="rotate-[45deg] text-sm lg:text-base">←</span>
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#50BDE9] shadow">
+            <span>
+              <ArrowSolidIcon height="19" color="black" />
+            </span>
           </div>
 
           <button
